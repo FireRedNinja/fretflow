@@ -1,0 +1,1 @@
+const t=["C","C#","D","D#","E","F","F#","G","G#","A","A#","B"],r=["E","A","D","G","B","E"],c=(n,o)=>{const e=t.indexOf(n);if(e===-1)return console.error(`Invalid open string note: ${n}`),"";const s=(e+o)%t.length;return t[s]};export{t as N,r as S,c as g};

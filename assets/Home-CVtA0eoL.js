@@ -1,0 +1,1 @@
+import{j as e}from"./index-DNOtO4WB.js";const s=()=>e.jsxs("div",{className:"p-4",children:[e.jsx("h1",{className:"text-2xl font-bold",children:"Welcome to FretFlow!"}),e.jsx("p",{children:"Select a module from the sidebar to start practicing."})]});export{s as default};
