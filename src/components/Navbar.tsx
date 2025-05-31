@@ -1,16 +1,16 @@
 import { NavLink } from "react-router";
 
-const Sidebar = () => {
+const Navbar = () => {
   const navLinkClass = ({ isActive }: { isActive: boolean }) =>
-    `block py-2 px-4 rounded transition duration-200 ${
+    `py-2 px-4 rounded transition duration-200 ${
       isActive
         ? "bg-blue-500 text-white shadow-inner"
         : "text-gray-700 hover:bg-blue-100 hover:text-blue-700"
     }`;
 
   return (
-    <aside className="w-64 bg-gray-100 p-4 border-r border-gray-300 h-full shadow-sm">
-      <nav className="space-y-2">
+    <nav className="w-full bg-gray-100 p-4 border-b border-gray-300 shadow-sm">
+      <div className="flex space-x-4 items-center justify-center">
         <NavLink to="/" className={navLinkClass} end>
           Home
         </NavLink>
@@ -32,10 +32,9 @@ const Sidebar = () => {
         <NavLink to="/theory" className={navLinkClass}>
           Theory Revision
         </NavLink>
-      </nav>
-    </aside>
+      </div>
+    </nav>
   );
 };
 
-
-export default Sidebar;
+export default Navbar;
